@@ -1,0 +1,27 @@
+---
+title: rllr overall architecture
+description: "standard stuff"
+date: June 20 2019
+---
+
+rllr consists of a device, a service, json and file storage, ML for speech to text, and again for text to objects and intent, and client apps.
+
+<Mermaid chart={`graph TD;
+    human --> device
+    device --> service
+    service --> cloud_storage
+    
+    
+    
+    cloud_storage --> service
+    service --> react_spa
+    react_spa --> human
+
+    service --> external_gateway
+    external_gateway --> google_calendar
+    external_gateway --> twilio
+    external_gateway --> zapier
+    external_gateway --> etc
+`} />
+
+

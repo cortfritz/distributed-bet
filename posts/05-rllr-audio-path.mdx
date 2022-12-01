@@ -1,0 +1,37 @@
+---
+title: rllr audio path
+description: "special stuff"
+date: May 20 2019
+---
+
+rllr exists to remove friction from thought to fulfillment of thought.
+
+I believe in a future where you have tens of computers on your body, and wanted to surf that wave.
+
+Here is the audio path from device through ML to storage.
+
+<Mermaid chart={`graph TD;
+    human --> microphone
+    subgraph device 
+      microphone --> record_process
+      record_process --> local_storage
+      local_storage --> upload_process
+      radio_management --> upload_process
+    end
+  
+    upload_process --> elixir_service
+
+    subgraph service
+      elixir_service --> buffer
+      buffer --> speech_to_text
+      
+      speech_to_text -- json describing speech --> object_extraction
+      object_extraction -- text and objects --> intent_determination
+      intent_determination -- rich description --> action
+      action -- imperative --> gateway
+    end
+    
+    buffer -- audio --> cloud_storage
+    action -- imperative --> cloud_storage
+    
+`} />
