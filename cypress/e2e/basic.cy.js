@@ -4,6 +4,6 @@ describe('sample render test', () => {
   });
 
   it('displays the title text', () => {
-    cy.get('h1').contains('Distributed Bet');
+    cy.get('h1').contains('A Humble Presentation to the Society of the Technically Eternal');
   });
 });

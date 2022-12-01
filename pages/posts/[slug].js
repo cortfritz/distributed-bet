@@ -16,7 +16,6 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
-import YouTube from "react-youtube";
 import { Mermaid } from 'mdx-mermaid/Mermaid';
 
 // Custom components/renderers to pass to MDX.
@@ -30,7 +29,6 @@ const components = {
   // See the notes in README.md for more details.
   Head,
   Image,
-  YouTube,
   Mermaid,
 };
 

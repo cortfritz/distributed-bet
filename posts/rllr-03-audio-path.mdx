@@ -11,6 +11,8 @@ I believe in a future where you have tens of computers on your body, and wanted 
 Here is the audio path from device through ML to storage.
 
 <Mermaid chart={`graph TD;
+    linkStyle default stroke:silver;
+    
     human --> microphone
     subgraph device 
       microphone --> record_process
@@ -35,3 +37,5 @@ Here is the audio path from device through ML to storage.
     action -- imperative --> cloud_storage
     
 `} />
+
+
